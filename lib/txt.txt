@@ -1,0 +1,3 @@
+ Elixir tells us that something went wrong and will refuse to do anything more about it until we give it different instructions.
+
+We need to cater for this sort of thing happening in the Elixir programs that we write. Sometimes, files are missing. The way that we can handle this is by using some conditional code within Elixir. Elixir has four main helpers for conditional code. They are: case, cond,if, and with. Conditional code allows us to give Elixir different instructions depending on what happens during the running of any Elixir program. Let's look at some examples. 

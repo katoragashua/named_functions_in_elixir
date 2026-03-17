@@ -32,6 +32,10 @@ defmodule InsightElixir.AnalyticsReport do
     # "Sales report generated for the given range #{inspect(range)}."
   end
 
+  def generate_report(:traffic, range = %{day: _, month: _, year: _}) do
+    "Traffic report generated for the given date #{range.day}/#{range.month}/#{range.year}."
+  end
+
   def generate_report(_, _), do: "Default report generated for arity 2 functions."
 
   def generate_report(:sales) do
